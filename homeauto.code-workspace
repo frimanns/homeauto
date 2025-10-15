@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+    },
+    "editor.tabSize": 2,
+    "yaml.schemas": {
+      "https://json.schemastore.org/docker-compose.json": "docker-compose.yml"
+    },
+    "markdown.preview.scrollEditorWithPreview": true,
+    "markdown.preview.openMarkdownLinks": "inEditor"
+  }
+}

@@ -1,0 +1,14 @@
+# Docker volumes
+mqtt/data/
+mqtt/log/
+homeassistant/.storage/
+homeassistant/home-assistant_v2.db
+homeassistant/.cloud/
+homeassistant/.uuid
+
+# Backup folders
+homeauto-backups/
+
+# System files
+.DS_Store
+*.swp
