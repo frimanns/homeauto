@@ -158,3 +158,36 @@ In the Home Assistant UI:
 - Consider adding .env support for ports and timezone
 - Use Git to track changes and reuse across machines
 
+🧭 Setup  MQTT Explorer
+
+- A desktop client for monitoring MQTT topics and payloads in real time
+- Shows a tree view of all topics
+- Lets you publish, subscribe, and inspect messages
+- Great for testing Home Assistant integrations and sensor data
+
+💻 Install MQTT Explorer
+- Go to mqtt-explorer.com
+- Download the Windows installer (.exe)
+- Install and launch the app
+
+🔌 Connect to Your Local Broker
+
+Use these settings:
+- Host: localhost
+- Port: 1883
+- Protocol: mqtt://
+- Username/Password: leave blank (you allowed anonymous access)
+Then click Connect.
+
+🧪 Try Publishing a Test Message
+Once connected:
+- Go to Publish
+- Topic: test/topic
+- Payload: {"hello": "world"}
+- Click Publish
+You’ll see it appear in the tree view instantly.
+
+🧠 Bonus: Use with Home Assistant
+- Home Assistant publishes to topics like homeassistant/sensor/...
+- You can watch automations trigger in real time
+- Great for debugging MQTT sensors or devices
