@@ -1,6 +1,7 @@
 # Docker volumes
 mqtt/data/
 mqtt/log/
+mqtt/watts-serial.txt
 homeassistant/.storage/
 homeassistant/home-assistant_v2.db
 homeassistant/.cloud/

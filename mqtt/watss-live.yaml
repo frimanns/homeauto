@@ -1,0 +1,221 @@
+mqtt:
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Active Energy
+      unique_id: "positive_active_energy"
+      device_class: energy
+      state_class: total
+      unit_of_measurement: Wh
+      value_template: "{{ value_json.positive_active_energy }}"
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Active Energy
+      unique_id: negative_active_energy
+      device_class: energy
+      state_class: total
+      unit_of_measurement: Wh
+      value_template: "{{ value_json.negative_active_energy }}"
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Reactive Energy
+      device_class: energy
+      state_class: total
+      unit_of_measurement: varh
+      value_template: "{{ value_json.positive_reactive_energy }}"
+      unique_id: positive_reactive_energy
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Reactive Energy
+      device_class: energy
+      state_class: total
+      unit_of_measurement: varh
+      value_template: "{{ value_json.negative_reactive_energy }}"
+      unique_id: negative_reactive_energy
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Active Power
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.positive_active_power }}"
+      unique_id: positive_active_power
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Active Power
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.negative_active_power }}"
+      unique_id: negative_active_power
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Active Power L1
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.positive_active_power_l1 }}"
+      unique_id: positive_active_power_l1
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Active Power L2
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.positive_active_power_l2 }}"
+      unique_id: positive_active_power_l2
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Active Power L3
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.positive_active_power_l3 }}"
+      unique_id: positive_active_power_l3
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Active Power L1
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.negative_active_power_l1 }}"
+      unique_id: negative_active_power_l1
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Active Power L2
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.negative_active_power_l2 }}"
+      unique_id: negative_active_power_l2
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Active Power L3
+      device_class: power
+      state_class: measurement
+      unit_of_measurement: W
+      value_template: "{{ value_json.negative_active_power_l3 }}"
+      unique_id: negative_active_power_l3
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Positive Reactive Power
+      device_class: reactive_power
+      state_class: measurement
+      unit_of_measurement: var
+      value_template: "{{ value_json.positive_reactive_power }}"
+      unique_id: positive_reactive_power
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Negative Reactive Power
+      device_class: reactive_power
+      state_class: measurement
+      unit_of_measurement: var
+      value_template: "{{ value_json.negative_reactive_power }}"
+      unique_id: negative_reactive_power
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Voltage L1
+      device_class: voltage
+      state_class: measurement
+      unit_of_measurement: V
+      value_template: "{{ value_json.voltage_l1 }}"
+      unique_id: voltage_l1
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Voltage L2
+      device_class: voltage
+      state_class: measurement
+      unit_of_measurement: V
+      value_template: "{{ value_json.voltage_l2 }}"
+      unique_id: voltage_l2
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Voltage L3
+      device_class: voltage
+      state_class: measurement
+      unit_of_measurement: V
+      value_template: "{{ value_json.voltage_l3 }}"
+      unique_id: voltage_l3
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Current L1
+      device_class: current
+      state_class: measurement
+      unit_of_measurement: A
+      value_template: "{{ value_json.current_l1 }}"
+      unique_id: current_l1
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Current L2
+      device_class: current
+      state_class: measurement
+      unit_of_measurement: A
+      value_template: "{{ value_json.current_l2 }}"
+      unique_id: current_l2
+  - sensor:
+      device:
+        name: Watts Live (SERIAL_NUMBER)
+        identifiers: SERIAL_NUMBER
+      state_topic: watts/SERIAL_NUMBER/measurement
+      name: Current L3
+      device_class: current
+      state_class: measurement
+      unit_of_measurement: A
+      value_template: "{{ value_json.current_l3 }}"
+      unique_id: current_l3
