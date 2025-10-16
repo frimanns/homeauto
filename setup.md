@@ -1,6 +1,50 @@
 🏠 Home Automation Setup on Windows 11 with Docker 
 
+
+🧱 Install Docker Desktop for Windows
+- Download from Docker's official site
+- Enable WSL2 backend during installation
+- Make sure Ubuntu is installed and set as the default WSL2 distro  
+
+
+🔐 Why Docker Desktop Asks for Login  
+
+Docker Desktop now requires users to sign in with a Docker Hub account to use it fully — especially for features like:
+- Pulling images from Docker Hub
+- Using Docker extensions
+- Accessing Docker Desktop settings
+
+But here's the good news:
+
+✅ You Don’t Need a Password Yet  
+Just Create an Account  
+If you don’t already have a Docker Hub account:
+
+- Go to https://hub.docker.com/signup
+- Create a free account (you can skip organization setup)
+- Once done, return to Docker Desktop and log in with your email/username + new password
+
+This unlocks the full Docker Desktop experience — no need to pay for personal use.
+
+🧭 After Login: Enable WSL2 Integration
+
+Once you're in:
+- Go to Settings → Resources → WSL Integration
+- Enable Docker for your Ubuntu distro
+- Then in Ubuntu WSL2, test with:
+
+```bash
+docker version
+docker run hello-world
+```
+
 📁 Folder Structure
+
+```bash
+mkdir -p ~/homeauto/{mqtt/config,mqtt/data,mqtt/log,homeassistant}
+cd ~/homeauto
+```
+
 
 ```bash
 homeauto/
